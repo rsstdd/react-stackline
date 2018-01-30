@@ -1,0 +1,29 @@
+// File Name: _colors.scss
+// Description: Colors Used By Entire App
+// Used by: typography.scss;
+// Dependencies:
+// ------------------------------------------------------------
+
+// --------------
+// Font
+// --------------
+$default-font-color: #4a4a4a;
+$light-gray: #b4b4b4;
+
+// -----------------
+// Black and White
+// -----------------
+$black: #252525;
+$white: #ffffff;
+
+// -----------------
+// Alpha White
+// -----------------
+$alpha-white1: rgba($white, .91);
+$alpha-white2: rgba($white, .65);
+$alpha-white3: rgba($white, .25);
+
+$border-color: #D6D8D8;
+$font-color: #555656;
+
+$sidebar-color: #D6D8D8;

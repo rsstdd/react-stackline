@@ -1,0 +1,44 @@
+
+
+@mixin sm {
+  @media (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+
+@mixin min-md {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin min-xl {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}

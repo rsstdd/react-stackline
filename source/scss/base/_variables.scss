@@ -1,0 +1,114 @@
+// file Name: abstract/_variables.scss
+// Description: Project Structure
+// Used by: app.scss
+// Dependencies:
+// ------------------------------------------------------------
+
+// -----------------------------------------------
+// Global
+// -----------------------------------------------
+
+// Font
+// -----------------
+$font-family-open-sans: 'Open Sans', sans-serif;
+// defaults
+$default-font-size: 1.6rem;
+$default-font-weight: 400;
+$default-letter-spacing: .1px;
+$tight-letter-spacing: -.2px;
+$default-line-height: 1.7;
+$default-word-spacing: normal;
+
+// nav/footer
+$nav-font-size: 1.6rem;
+$footer-font-size: 1.2rem;
+$navbar-height: 5rem;
+$navbar-color: $white;
+
+// Font - Landing Page
+// ------------------
+// heading 1
+$heading-primary-font-size: 3.6rem;
+$heading-primary-font-size-sm: 2.4rem;
+
+// heading 2
+$heading-secondary-font-size: 2.2rem;
+$heading-secondary-font-size-sm: 1.6rem;
+$heading-secondary-sub-font-size: 2.4rem;
+
+
+
+// Font Sizes - About Pages (Make/Display)
+// ------------------
+$heading-app-primary-font-size: 4rem;
+$heading-app-primary-font-size-sm: 2.4rem;
+
+// Subheadings for Three-Col Layout
+$heading-tertiary-font-size: 2rem;
+$heading-tertiary-font-size-sm: 2.4rem;
+
+
+
+// -> Buttons
+$button-font-size: 1.6rem;
+
+
+// Box Shadow
+// -----------------
+$box-shadow-1-hover: 3px 3px 2px 1px rgba(0, 0, 0, .55);
+$box-shadow-1: 2px 2px 2px rgba(0, 0, 0, .45);
+$box-shadow-2: 0 2px 4px 0 rgba(0, 0, 0, .03);
+$box-shadow-2-hover:  0 2px 4px 0 rgba(0, 0, 0, .05);
+
+$box-shadow-buttons:  0 .2rem 1.4rem 0 rgba(0, 0, 0, .1);
+
+// -----------------------------------------------
+// Views
+// -----------------------------------------------
+
+// Dashboard - Font
+// -----------------
+$title-letter-spacing: .5px;
+$overview-title-font-size: 1.25rem;
+$overview-title-font-weight: 600;
+
+// Main - Nav
+// -----------------
+$nav-main-height: 10rem;
+
+
+// -----------------------------------------------
+// Layout
+// -----------------------------------------------
+
+// Grid
+// -----------------
+$grid-width: 114rem;
+$full-width: 100vw;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+$grid-min-height: 25rem;
+$grid-spacing: 1.5rem !default;
+
+// Breakpoints (For other Styles)
+// -----------------
+$breakpoint-xs: 375px !default;
+$breakpoint-sm: 500px !default;
+$breakpoint-md: 769px !default;
+$breakpoint-lg: 1200px !default;
+$breakpoint-xl: 2000px !default;
+$breakpoint-2x: 2500px !default;
+
+// Breakpoints (For Grid)
+// -----------------
+$grid-xs: 375px !default;
+$grid-sm: 500px !default;
+$grid-md: 769px !default;
+$grid-lg: 1200px !default;
+$grid-xlg: 2000px !default;
+
+$grid-xxs-max:    ($grid-xs - 1);
+$grid-xs-max:     ($grid-sm - 1);
+$grid-sm-max:     ($grid-md - 1);
+$grid-md-max:     ($grid-lg - 1);
+$grid-lg-max:     ($grid-xlg - 1);

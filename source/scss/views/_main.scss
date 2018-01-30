@@ -1,0 +1,75 @@
+// File Name: _main.scss
+// Description: Multiview View Styles
+// Used by: app.scss for Multiview/index.jsx
+// ------------------------------------------------------------
+
+.main {
+  background-color: $light-gray;
+  height: 100%;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.app {
+  padding: 0 5rem;
+}
+
+// -------------------------------------------------------------
+// Chart
+// -------------------------------------------------------------
+
+.overview {
+
+  &__chart {
+    background-color: $white;
+    height: auto;
+    width: 100%;
+
+    h2 {
+      padding: 2.5rem;
+      text-align: left;
+      width: 16.25rem;
+    }
+  }
+}
+
+
+// -------------------------------------------------------------
+// Summary List
+// -------------------------------------------------------------
+
+.summary-list {
+  @include md {
+    margin: 0 !important; // Overwrite grid styles
+    margin-bottom: 10rem;
+    width: 90%;
+  }
+  height: auto;
+  margin-bottom: 10rem;
+
+  &__item {
+    @include sm {
+      margin-right: 1rem !important; // Overwrite grid styles
+      width: 47%;
+    }
+    background-color: $white;
+    box-shadow: $box-shadow-1;
+    padding-left: 5rem;
+  }
+
+  &__title {
+    font-size: $overview-title-font-size;
+    font-weight: $overview-title-font-weight;
+    letter-spacing: $title-letter-spacing;
+    margin: 1rem;
+    text-align: center;
+    word-spacing: $default-word-spacing;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    padding-right: 5rem;
+    text-align: center;
+    width: 20%;
+  }
+}

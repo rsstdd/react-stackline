@@ -1,0 +1,63 @@
+// File Name: _pagination.scss
+// Description: global pagination styles
+// Used by: app.scss (Multiview)
+// Dependencies:
+// ------------------------------------------------------------
+
+$black: #333;
+
+.pagination {
+  flex: 1;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row nowrap;
+  flex-basis: 100%;
+  justify-content: center;
+
+  &__page-numbers {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  &__page-numbers-number {
+    margin: 1rem;
+    font-size: 2rem;
+    padding: .5rem;
+    margin-right: 0.3em;
+    width: 28px;
+    height: 28px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__page-numbers-number--active {
+    border-bottom: 2px solid $black;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: .5rem;
+    margin-right: 0.3em;
+    cursor: pointer;
+
+    :last-of-type {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+@include sm {
+  .pagination {
+    &__page-numbers-number {
+      margin: .25rem;
+      padding: .15rem;
+      font-size: 1rem;
+    }
+
+    &__page-numbers-number--active {
+      border-bottom: none;
+      font-size: 1rem !important;
+      margin-right: 0;
+      padding: .15rem;
+      font-weight: 900;
+    }
+  }
+}

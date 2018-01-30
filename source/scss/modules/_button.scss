@@ -1,0 +1,36 @@
+// File Name: _button.scss
+// Description: Button styles
+// Used by: app.scss
+// Dependencies:
+// ------------------------------------------------------------
+
+// =======================
+//         btns
+// =======================
+.btn {
+  border: .5px solid $default-font-color;
+  border-radius: .4rem;
+  box-shadow: $box-shadow-buttons;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .1px;
+  line-height: 2rem;
+  margin: .5rem;
+  padding: 0 2rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  width: auto;
+  word-spacing: $default-word-spacing; // Fixes grid Spacing Bug
+
+  a,
+  p {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: none !important; // Overwrites GetWrapper Styles
+  }
+}

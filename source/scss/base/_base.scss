@@ -1,0 +1,33 @@
+// -------------------------------------------------------------
+// Variables
+// -------------------------------------------------------------
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.viewport {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+// Navigation
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Links
+a {
+  color: $black;
+  list-style: none;
+  text-decoration: none;
+}

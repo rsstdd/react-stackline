@@ -1,0 +1,93 @@
+// File Name: _loader.scss
+// Description: Loader styles
+// Used by: app.scss (Multiview)
+// Dependencies:
+// ------------------------------------------------------------
+
+.loading {
+  font-size: 22px;
+  align-items: center;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+
+  &__spinner {
+    animation: fade 1s linear infinite;
+    border-radius: 50%;
+    color: #666;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    width: 100px;
+    
+    &:after, &:before {
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 100px;
+      width: 100px;
+    }
+    
+    &:after {
+      animation: spin 1s linear infinite;
+      border: 2px solid transparent;
+      border-top-color: #666;
+      border-bottom-color: #666;
+      left: -2px;
+      position: absolute;
+      top: -2px;
+    }
+    
+    p {
+      left: 18px;
+      position: absolute;
+      top: 20px;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg) scale(1)
+      }
+      50% {
+        transform: rotate(135deg) scale(1.2)
+      }
+      100% {
+        transform: rotate(360deg) scale(1)
+      }
+    }
+
+  }
+  
+  &__spinner--fade {
+    animation: fade 0.25s linear;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade {
+      0% {
+        opacity: 0.2;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+

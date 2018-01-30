@@ -1,0 +1,28 @@
+// File Name: _header.scss
+// Description: global header styles
+// Used by: app.scss
+// Dependencies:
+// ------------------------------------------------------------
+
+
+
+.navbar {
+  align-items: center;
+  background-color: $navbar-color;
+  margin-bottom: 7rem;
+  min-height: $navbar-height;
+  padding: 1rem 3rem;
+
+  &__logo {
+    img {
+      height: 3rem;
+      width: auto;
+    }
+  }
+}
+
+@include sm {
+  .navbar {
+    padding: 1em;
+  }
+}

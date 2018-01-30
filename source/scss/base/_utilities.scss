@@ -1,0 +1,108 @@
+// file Name: base/_utilities.scss
+// Description: _utilities
+// Used by: app.scss
+// Dependencies:
+// ------------------------------------------------------------
+
+// Text
+// -----------
+.u-center-text { text-align: center !important; }
+.u-justify-text { text-align: justify !important; }
+.u-no-pad { padding: 0 !important; }
+.u-underline-text { text-decoration: underline !important; }
+
+// Inline/Block
+.u-inline { display: inline !important; }
+.u-block { display: block !important; }
+
+// Margin
+// -----------
+// -> none
+.u-margin-none { margin: 0 !important; padding: 0 !important; }
+
+// -> top
+.u-margin-top-sm { margin-top: 1.5rem !important; }
+.u-margin-top-md { margin-top: 4rem !important; }
+.u-margin-top-lg { margin-top: 8rem !important; }
+.u-margin-top-xl { margin-top: 10rem !important; }
+
+// -> bottom
+.u-margin-bottom-sm { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-md { margin-bottom: 4rem !important; }
+.u-margin-bottom-lg { margin-bottom: 6.4rem !important; }
+.u-margin-bottom-xl { margin-bottom: 10rem !important; }
+
+// -> top & bottom
+.u-margin-tnb-1 { margin: 1rem 0 !important;}
+.u-margin-tnb-sm { margin: 1.5rem 0 !important;}
+.u-margin-tnb-md { margin: 4rem 0 !important;}
+.u-margin-tnb-lg { margin: 8rem 0 !important;}
+.u-margin-tnb-xl { margin: 10rem 0 !important;}
+
+
+// Hiding Elements
+// -----------
+.u-hidden {
+  display: none !important;
+}
+
+.u-hide-sm {
+  @include sm {
+    display: none;
+  };
+
+  display: block;
+}
+
+.u-hide-md {
+  @include md {
+    display: none;
+  };
+
+  display: block;
+}
+
+// Centering
+// Can use mixins
+// -----------
+.u-center-h-block { margin: 0 auto !important; }
+
+// Parent element must be set to relative
+.u-center-hv-block {
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.u-center-hv-flex {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.u-center-v-flex {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center !important;
+}
+
+.u-right-align-flex {
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+
+// No Scroll
+// -----------
+.u-no-scroll {
+  overflow: hidden !important;
+}

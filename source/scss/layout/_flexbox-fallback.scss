@@ -1,0 +1,9 @@
+.grid {
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify;
+
+  [class^="col-"] {
+    @include reset-text-align();
+  }
+}
