@@ -2,7 +2,8 @@
 
 ### UI/UX Challenge for Stackline Web Dev Position
 
-#### To spin it up: `npm i -S && npm run client:dev`
+#### To spin it up:
+`npm i -S && npm run client:dev`
 
 ***
 
