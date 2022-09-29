@@ -88,7 +88,7 @@
     "redux-thunk": "^2.2.0",
     "transit-immutable-js": "^0.7.0",
     "transit-js": "^0.8.846",
-    "victory": "^0.24.5",
+    "victory": "^36.6.8",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   },
