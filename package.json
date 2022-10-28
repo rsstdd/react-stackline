@@ -58,7 +58,7 @@
     "style-loader": "^0.18.2",
     "svgo": "^0.7.2",
     "svgo-loader": "^1.2.1",
-    "webpack-dashboard": "^0.4.0",
+    "webpack-dashboard": "^3.3.7",
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
